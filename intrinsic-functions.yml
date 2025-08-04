@@ -1,0 +1,12 @@
+Resources:
+  EC2Instance:
+    Type: "AWS::EC2::EC2Instance"
+    Properties:
+      Instance Type: t2 micro
+      ImageId: ami-4389238 #Amazon Linux AMI in Sydney  
+      Tags:
+        - Key: "Name"
+          Value: ! Join [" ", [EC2, Instance, with, Fn,  Join] ]
+
+        
+        
