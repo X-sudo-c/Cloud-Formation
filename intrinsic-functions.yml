@@ -9,4 +9,4 @@ Resources:
           Value: ! Join [" ", [EC2, Instance, with, Fn,  Join] ]
 
         
-        
+
